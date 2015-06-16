@@ -1,0 +1,46 @@
+header {
+  padding: 40px 0 40px; 0;
+  text-align: center;
+  background: url("http://images.fineartamerica.com/images-medium-large-5/hongkong-night-skylines-panorama-black-and-white-hakai-matsu.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+h1 {
+  font-size: 50px;
+}
+body {
+  font-family: helvetica;
+  font-size: 14px;
+}
+h2 {
+  font-size: 20px;
+  font-style: bold;
+  color: black;
+  
+}
+img {
+  margin: 20px 0px 20px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin:0 auto;
+}
+input {
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+input[type="submit"] {
+  background: red;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+  }
+}
