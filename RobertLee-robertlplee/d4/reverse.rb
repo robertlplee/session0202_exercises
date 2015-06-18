@@ -1,6 +1,7 @@
 def reverse(array)
 	reversed_array = []
 	array.each do |object|
+	# reversed_array = array.each do |object|
 		reversed_array.unshift(object)
 	end
 	reversed_array
