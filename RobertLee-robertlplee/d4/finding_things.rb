@@ -13,7 +13,7 @@ def find_by_name(array, string)
 	result = []
 	array.each do |hash|
 		if hash[:name] == string
-			hash
+			puts hash
 			break
 		end
 	end
@@ -54,11 +54,11 @@ people = [
 
 
 # puts index_of("hello", "l")
-# puts find_by_name(people, "ski")
+puts find_by_name(people, "ski")
 # => {:id=>2,:name=>"ski"}
 # find_by_name(people, "kitten!")
 # => nil
-# puts filter_by_name(people, "ski")
+puts filter_by_name(people, "ski")
 # # => [{:id=>2,:name=>"ski"}, {:id=>4,:name=>"ski"}]
 # filter_by_name(people, "bru")
 # # => [{:id=>1,:name=>"bru"}] (Note this is still an array)
