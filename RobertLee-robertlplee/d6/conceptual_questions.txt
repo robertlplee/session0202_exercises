@@ -1,0 +1,6 @@
+1. The router takes in a URL and tells the controller which action to perform, including which view to render. 
+
+2. 
+Schema - the organizational structure for the database, or the blueprint for its construction.
+Database - an organized collection of data, on which the controller can perform CRUD operations.
+Model
