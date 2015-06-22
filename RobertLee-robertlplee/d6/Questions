@@ -2,3 +2,5 @@ Questions
 
 5.3 - The params method is the object which represents the parameters (or fields) coming in from the form.?
 
+5.12 - Everything except for the form_for declaration remained the same. The reason we can use this shorter, simpler form_for declaration to stand in for either of the other forms is that @article is a resource corresponding to a full set of RESTful routes, and Rails is able to infer which URI and method to use. For more information about this use of form_for, see Resource-oriented style.
+
