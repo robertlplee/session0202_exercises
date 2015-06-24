@@ -1,0 +1,16 @@
+<h1><%=@place.name%></h1>
+
+<p>
+  <strong>Location:</strong>
+  <%= @place.location %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @place.description %>
+</p>
+
+</br>
+
+<%= link_to "Add a new place", new_place_path %>
+<%= link_to 'Back to index', places_path %>
