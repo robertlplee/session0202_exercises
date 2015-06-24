@@ -1,9 +1,34 @@
 <h1>List of animals</h1>
 
-<ul>
+<table>
+	<tr>
+		<th>Animal</th>
+		<th>Region</th>
+		<th>Life Expectancy</th>
+		<th>Population health</th>
+		<th>Ridable?</th>
+
+
+		<th colspan="3"></th>
+	</tr>
+
 	<% @animals.each do |animal| %>
-		<li><%= link_to animal.name, animal_path(animal) %></li>
+	<tr>
+		<td><%= link_to animal.name, animal_path(animal) %></td>
+		<td><%= animal.region %></td>
+		<td><%= animal.life_expectancy %></td>
+		<td><%= animal.conservation_status %></td>
+		<td><%= animal.ridable %></td>
+
+		<td><%= link_to 'Show', animal_path(animal) %></td>
+		<td><%= link_to 'Edit', edit_animal_path(animal) %></td>
+		<td><%= link_to 'Destroy', animal_path(animal),
+			method: :delete,
+			data: { confirm: 'Are you sure?' } %></td>
+		</tr>
 	<% end %>
-</ul>
+</table>
+
+</br>
 
 <%= link_to "New Animal", new_animal_path %>

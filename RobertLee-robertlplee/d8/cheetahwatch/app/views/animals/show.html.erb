@@ -1,1 +1,24 @@
 <h1><%=@animal.name%></h1>
+
+<p>
+  <strong>Region:</strong>
+  <%= @animal.region %>
+</p>
+ 
+<p>
+  <strong>Life Expectancy:</strong>
+  <%= @animal.life_expectancy %>
+</p>
+
+<p>
+  <strong>Conservation Status:</strong>
+  <%= @animal.conservation_status %>
+</p>
+
+<p>
+  <strong>Ridable?</strong>
+  <%= @animal.ridable %>
+</p>
+
+<%= link_to "New Animal", new_animal_path %>
+<%= link_to 'Back to index', animals_path %>
