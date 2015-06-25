@@ -23,18 +23,12 @@ class AnimalsController < ApplicationController
 
 	def edit
 		@animal = Animal.find(params[:id])
-
-		if @animal.update(animal_params)
-			redirect_to @animal
-		else
-			render 'edit'
-		end
 	end
 
 	def update
 		@animal = Animal.find(params[:id])
 
-		if @animal.update(article_params)
+		if @animal.update(animal_params)
 			redirect_to @animal
 		else
 			render 'edit'
@@ -48,7 +42,7 @@ class AnimalsController < ApplicationController
 		redirect_to animals_path
 	end
 
-private 
+	private 
 	def animal_params
 		params.require(:animal).permit(:name, :region, :life_expectancy, :conservation_status)
 	end
