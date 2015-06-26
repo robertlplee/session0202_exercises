@@ -13,3 +13,10 @@ Animal.delete_all
 Animal.create!({name: "Elephant", region: "India", life_expectancy: 70, conservation_status: "Endangered AF", ridable: true})
 Animal.create! name: "Flamingo", region: "Stellenbosch", life_expectancy: 49, conservation_status: "Abundant", ridable: true
 Animal.create! name: "Shark", region: "Ocean", life_expectancy: 1000000, conservation_status: "Endangered AF", ridable: false
+
+
+puts "Creating shelters..."
+
+Shelter.delete_all
+
+Shelter.create! name: "Heaven", location: "above"

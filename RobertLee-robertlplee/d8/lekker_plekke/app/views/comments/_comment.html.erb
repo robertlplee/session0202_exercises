@@ -1,0 +1,16 @@
+<!-- underscore means partial, used when we want to render the same part of a view many times but don't want to repeat code -->
+<p>
+  <strong>Commenter:</strong>
+  <%= comment.commenter %>
+</p>
+ 
+<p>
+  <strong>Comment:</strong>
+  <%= comment.text %>
+</p>
+ 
+<p>
+  <%= link_to 'Destroy Comment', [comment.place, comment],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
