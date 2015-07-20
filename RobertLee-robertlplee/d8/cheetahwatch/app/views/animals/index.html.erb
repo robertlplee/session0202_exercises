@@ -21,10 +21,12 @@
 		<td><%= animal.ridable %></td>
 
 		<td><%= link_to 'Show', animal_path(animal) %></td>
-		<td><%= link_to 'Edit', edit_animal_path(animal) %></td>
-		<td><%= link_to 'Destroy', animal_path(animal),
-			method: :delete, #tells rails to link to execute animals_controller
-			data: { confirm: 'Are you sure?' } %></td>
+		<% if user_signed_in? %>
+			<td><%= link_to 'Edit', edit_animal_path(animal) %></td>
+			<td><%= link_to 'Destroy', animal_path(animal),
+				method: :delete, #tells rails to link to execute animals_controller
+				data: { confirm: 'Are you sure?' } %></td>
+		<%end%>
 		</tr>
 	<% end %>
 </table>
